@@ -24,7 +24,7 @@ if (window.screen.width >= 1024) {
       ".menu-icon",
       0.5,
       {
-        x: 0,
+        x: 10,
       },
       {
         x: 100,
@@ -55,27 +55,6 @@ if (window.screen.width >= 1024) {
           navOpen.style.pointerEvents = "auto";
         },
       }
-    )
-    .fromTo(
-      ".cover-date",
-      1,
-      {
-        opacity: 0.7,
-        fontSize: "2em",
-        left: "10%",
-        bottom: "10%",
-        ease: Power2.easeOut,
-      },
-      {
-        opacity: 1,
-        fontSize: "5em",
-        left: "80%",
-        bottom: "50%",
-        onComplete: function () {
-          navOpen.style.pointerEvents = "auto";
-        },
-      },
-      "-= 0.5"
     );
 } else if (window.screen.width >= 992) {
   {
@@ -99,7 +78,7 @@ if (window.screen.width >= 1024) {
         ".menu-icon",
         0.5,
         {
-          x: 0,
+          x: 10,
         },
         {
           x: 100,
@@ -169,6 +148,8 @@ if (window.screen.width >= 1024) {
       },
       {
         width: "100%",
+        display: "flex",
+        justifyContent: "space-around",
       },
       "-= 0.5"
     )
@@ -176,7 +157,7 @@ if (window.screen.width >= 1024) {
       ".menu-icon",
       0.5,
       {
-        x: 0,
+        x: 10,
       },
       {
         x: 100,
@@ -192,13 +173,36 @@ if (window.screen.width >= 1024) {
       },
       "-= 0.5"
     )
+    .to(".dishes", 0.1, {
+      marginBottom: "100%",
+    })
+    .fromTo(
+      ".cover-date-portfolio",
+      0.5,
+      {
+        color: "transparent",
+        opacity: 0.7,
+        fontSize: "2em",
+        left: "10%",
+        ease: Power2.easeOut,
+      },
+      {
+        color: "white",
+        opacity: 1,
+        fontSize: "5em",
+        left: "5%",
+        onComplete: function () {
+          navOpen.style.pointerEvents = "auto";
+        },
+      }
+    )
     .fromTo(
       ".nav-open",
-      0.5,
+      1,
       {
         opacity: 0,
         x: 50,
-        ease: Power2.easeOut,
+        ease: "power3.inOut",
         width: "40%",
       },
       {
@@ -209,6 +213,15 @@ if (window.screen.width >= 1024) {
           navOpen.style.pointerEvents = "auto";
         },
       }
+    )
+    .to(
+      ".nav-images",
+      0.1,
+      {
+        opacity: 0,
+        display: "none",
+      },
+      "-= 0.5"
     );
 }
 
