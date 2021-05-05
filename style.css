@@ -206,6 +206,26 @@ nav {
   padding-bottom: 3rem;
 }
 
+.contact-text-area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  width: 80%;
+}
+
+.contact-text-title {
+  padding-top: 5rem;
+  color: white;
+}
+
+.contact-text {
+  font-family: "Cardo", sans-serif;
+  color: white;
+  padding: 3rem;
+}
+
 /* Masonry */
 .masonry {
   /* Masonry container */

@@ -166,6 +166,8 @@ if (window.screen.width >= 1024) {
         },
         {
           width: "100%",
+          display: "flex",
+          justifyContent: "space-around",
         },
         "-= 0.5"
       )
@@ -174,11 +176,9 @@ if (window.screen.width >= 1024) {
         0.5,
         {
           x: 10,
-          color: "white",
         },
         {
           x: 100,
-          color: "#136356",
         },
         "-= 0.5"
       )
@@ -191,38 +191,53 @@ if (window.screen.width >= 1024) {
         },
         "-= 0.5"
       )
-      .fromTo(
-        ".nav-open",
-        0.5,
-        {
-          opacity: 0,
-          x: 50,
-          ease: Power2.easeOut,
-        },
-        {
-          opacity: 1,
-          x: 0,
-          onComplete: function () {
-            navOpen.style.pointerEvents = "auto";
-          },
-        }
-      )
+      .to(".dishes", 0.1, {
+        marginBottom: "100%",
+      })
       .fromTo(
         ".cover-date",
-        1,
+        0.5,
         {
+          color: "transparent",
           opacity: 0.7,
           fontSize: "2em",
           left: "10%",
           ease: Power2.easeOut,
         },
         {
+          color: "white",
           opacity: 1,
           fontSize: "5em",
           left: "5%",
           onComplete: function () {
             navOpen.style.pointerEvents = "auto";
           },
+        }
+      )
+      .fromTo(
+        ".nav-open",
+        1,
+        {
+          opacity: 0,
+          x: 50,
+          ease: "power3.inOut",
+          width: "40%",
+        },
+        {
+          opacity: 1,
+          x: 0,
+          width: "100%",
+          onComplete: function () {
+            navOpen.style.pointerEvents = "auto";
+          },
+        }
+      )
+      .to(
+        ".nav-images",
+        0.1,
+        {
+          opacity: 0,
+          display: "none",
         },
         "-= 0.5"
       );
