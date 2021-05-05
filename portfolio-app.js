@@ -23,17 +23,6 @@ if (window.screen.width >= 1024) {
       },
       "-= 0.5"
     )
-    .fromTo(
-      ".menu-icon",
-      0.5,
-      {
-        x: 10,
-      },
-      {
-        x: 100,
-      },
-      "-= 0.5"
-    )
     .to(
       "nav",
       1,

@@ -24,11 +24,9 @@ if (window.screen.width >= 1024) {
       ".menu-icon",
       0.5,
       {
-        x: 10,
         color: "white",
       },
       {
-        x: 100,
         color: "#136356",
       },
       "-= 0.5"
