@@ -178,6 +178,34 @@ nav {
   font-size: 1.4rem;
 }
 
+.about-image {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  object-position: left;
+  margin: auto;
+}
+
+.about-text-area {
+  background-color: white;
+}
+
+.about-text-title {
+  padding-top: 5rem;
+}
+
+.about-text {
+  font-family: "Cardo", sans-serif;
+  color: black;
+  padding: 3rem;
+}
+
+.image-text-area {
+  object-fit: cover;
+  width: 90vw;
+  padding-bottom: 3rem;
+}
+
 /* Masonry */
 .masonry {
   /* Masonry container */
@@ -212,6 +240,16 @@ nav {
   }
   .title-nav {
     font-size: 2.5rem;
+  }
+  .about-text {
+    font-family: "Cardo", sans-serif;
+    color: black;
+    padding: 5rem;
+  }
+  .image-text-area {
+    object-fit: cover;
+    width: 50vw;
+    padding-bottom: 5rem;
   }
 }
 

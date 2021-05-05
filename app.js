@@ -65,14 +65,12 @@ if (window.screen.width >= 1024) {
         opacity: 0.7,
         fontSize: "2em",
         left: "10%",
-        bottom: "10%",
         ease: Power2.easeOut,
       },
       {
         opacity: 1,
         fontSize: "5em",
-        left: "80%",
-        bottom: "50%",
+        left: "50%",
         onComplete: function () {
           navOpen.style.pointerEvents = "auto";
         },
@@ -141,16 +139,12 @@ if (window.screen.width >= 1024) {
         opacity: 0.7,
         fontSize: "2em",
         left: "10%",
-        right: "auto",
-        bottom: "10%",
         ease: Power2.easeOut,
       },
       {
         opacity: 1,
         fontSize: "5em",
-        left: "auto",
-        right: "1rem",
-        bottom: "50%",
+        left: "45%",
         onComplete: function () {
           navOpen.style.pointerEvents = "auto";
         },
@@ -220,16 +214,12 @@ if (window.screen.width >= 1024) {
           opacity: 0.7,
           fontSize: "2em",
           left: "10%",
-          right: "auto",
-          bottom: "10%",
           ease: Power2.easeOut,
         },
         {
           opacity: 1,
           fontSize: "5em",
-          left: "auto",
-          right: "1rem",
-          bottom: "50%",
+          left: "5%",
           onComplete: function () {
             navOpen.style.pointerEvents = "auto";
           },
