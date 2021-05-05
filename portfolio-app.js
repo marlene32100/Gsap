@@ -56,7 +56,7 @@ if (window.screen.width >= 1024) {
         },
       }
     );
-} else if (window.screen.width >= 992) {
+} else if (window.screen.width >= 768) {
   {
     tl.to(".cover", 1, {
       width: "60%",
